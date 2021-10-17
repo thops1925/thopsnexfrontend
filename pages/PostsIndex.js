@@ -11,9 +11,14 @@ function PostsIndex() {
   }, [dispatch]);
 
   return (
-    <div>
-      <Form />
-      <Posts />
+    <div className="flex flex-col">
+      <div className="flex justify-center items-center text-4xl bg-blue-500 mb-8 h-12">
+        Daily worries
+      </div>
+      <div className="flex justify-between">
+        <Posts />
+        <Form />
+      </div>
     </div>
   );
 }
